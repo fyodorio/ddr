@@ -16,7 +16,7 @@ const { shows = [] as Show[] } = Astro.props;
 const upcoming = shows
 ---
 
-<Section title="Próximos Shows">
+<Section title="Upcoming Shows">
   {
     upcoming.length > 0 ? (
       <section class="space-y-3">
@@ -27,7 +27,7 @@ const upcoming = shows
         </ul>
       </section>
     ) : (
-      <p class="text-muted-foreground">No hay shows programados.</p>
+      <p class="text-muted-foreground">No shows in the nearest time.</p>
     )
   }
 </Section>
